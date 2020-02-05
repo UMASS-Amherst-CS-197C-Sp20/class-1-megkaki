@@ -32,7 +32,9 @@ int main(int argc, char** argv){
 	*/
 	printf("#####student code start#####\n");
 	//////////Your code here//////////
-
+	short type_short = 0;
+	double type_double = 0;
+	printf("size of short+double: %lu\n", sizeof(type_short+type_double));
 	//example
 	int type_int = 0;
 	long type_long = 0;
@@ -43,7 +45,7 @@ int main(int argc, char** argv){
 
 	printf("\nWith different size, unsigned, or unsigned. \n");
 
-	printf("CHAR_BIT    :   %d\n", CHAR_BIT);
+    printf("CHAR_BIT    :   %d\n", CHAR_BIT);
     printf("CHAR_MAX    :   %d\n", CHAR_MAX);
     printf("CHAR_MIN    :   %d\n", CHAR_MIN);
     printf("INT_MAX     :   %d\n", INT_MAX);
@@ -75,13 +77,16 @@ int main(int argc, char** argv){
 		TODO:
 		print the value of max value of signed int + 1
 		print the value of max value of unsigned int + 1
-		print the value of max value of signed long + 1
 		print the value of max value of float + 1
 		print the value of max value of float + 1000
 	*/
 	printf("#####student code start#####\n");
     //////////Your code here//////////
-
+	printf(INT_MAX+1);
+	printf((unsigned int)UINT_MAX+1);
+	printf((long)LONG_MAX+1);
+	printf((float)FLT_MAX+1);
+	printf((float)FLT_MAX+1000);
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
 
@@ -96,7 +101,7 @@ int main(int argc, char** argv){
 		TODO:
 		Why we are getting this result?
 	*/
-
+	//
 	printf("\nIs 1 equals to true? \n");
 	//1 is true, 0 is false
 	if(1)
@@ -124,8 +129,8 @@ int main(int argc, char** argv){
     }
 
     //TODO: uncommend below code after complete print_string fucntion
-    //print_string(s1);
-    //print_string(s2);
+  print_string(s1);
+  print_string(s2);
 
     //exit status for the OS, 0 means no error.
     //It is different than the C true/false value
@@ -146,3 +151,6 @@ void func1(int* i){
 	as input and no output.
 	This function needs to print the string in the concole.
 */
+void print_string(char* s){
+	printf("%s \n", s);
+}
