@@ -33,7 +33,7 @@ int main(int argc, char** argv){
 	printf("#####student code start#####\n");
 	//////////Your code here//////////
 	short type_short = 0;
-	double type_double = 0;
+	double type_double = 0.0;
 	printf("size of short+double: %lu\n", sizeof(type_short+type_double));
 	//example
 	int type_int = 0;
@@ -85,9 +85,8 @@ int main(int argc, char** argv){
 	printf(INT_MAX+1);
 	printf((unsigned int)UINT_MAX+1);
 	printf((long)LONG_MAX+1);
-	printf((float)FLT_MAX+1);
-	printf((float)FLT_MAX+1000);
-	//////////End of the code/////////
+	printf("%g\n",(float)FLT_MAX+1);
+	printf("%g\n",(float)FLT_MAX+1000);
 	printf("#####student code end#####\n");
 
 	printf("\n");
@@ -101,7 +100,7 @@ int main(int argc, char** argv){
 		TODO:
 		Why we are getting this result?
 	*/
-	//
+	//The result comes out to be 8, because it tellsuis the size of the character pointer rather than that of  the string itself.
 	printf("\nIs 1 equals to true? \n");
 	//1 is true, 0 is false
 	if(1)

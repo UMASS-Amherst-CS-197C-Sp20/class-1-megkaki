@@ -10,7 +10,13 @@ int main(void) {
 		Google rand() and srand()
 	*/
 	//////////Your code here//////////
-	int secret = 77;
+	int lowerRange = 0;
+	int upperRange = 0;
+	printf("Enter the lower range: ");
+	scanf("%d", &lowerRange);
+	printf("Enter the upper range: ");
+	scanf("%d", &upperRange);
+	int secret = (rand()% (upperRange+1-lowerRange))+lowerRange;
 
 	//////////End of the code/////////
 
